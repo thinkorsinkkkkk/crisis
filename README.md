@@ -18,4 +18,4 @@ I included a test program, so go ahead and try that.
 Make sure to run the program using `sudo`, as you *will* get an error. If it asks you to do so, disable SIP.
 ```c
 ./compile.sh
-sudo ./bin/attacker```
+sudo ./bin/attacker
