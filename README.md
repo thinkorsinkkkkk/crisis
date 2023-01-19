@@ -9,6 +9,7 @@ Just thought this would be fun to make, a lot is coming up in the future :D
 * Pointer scanning (since the stack isn't as reliable)
 * Better TUI (ffs)
 * Support for other reading/writing modes
+
 And a lot more!
 
 # How can you run this?
