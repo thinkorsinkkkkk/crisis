@@ -49,7 +49,5 @@ void write(vm_map_read_t task, vm_address_t address, vm_offset_t data) {
         fprintf(stderr, "can't write, result %s\n", mach_error_string(res));
         exit(-1);
     }
-    else {
-        printf("Success!\n");
-    }
+    printf("Success!\n");
 }

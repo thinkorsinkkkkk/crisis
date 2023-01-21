@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <mach/mach.h>
-#include <mach/arm/thread_state.h>
 
 int main() {
     int n = 256;
@@ -9,7 +7,7 @@ int main() {
     printf("Address: %p\n", &n);
     printf("PID: %d\n", pid);
     printf("============\n");
-    printf("Before change: %i", n);
+    printf("Before change: %i\n", n);
     getchar();
     printf("After change: %i\n", n);
 }

@@ -18,7 +18,7 @@ void read_address() {
     vm_map_read_t task = get_task(pid);
     mach_msg_type_number_t size = sizeof(int);
     vm_offset_t data = read(address, task, sizeof(int));
-    for (int x=0;x<size;x++) {
+    for (size_t x=0;x<size;x++) {
         printf("%hhx\n", ((char*)data)[x]);
     }
 }
