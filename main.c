@@ -7,7 +7,7 @@ int main() {
     printf("Address: %p\n", &n);
     printf("PID: %d\n", pid);
     printf("============\n");
-    printf("Before change: %i\n", n);
+    printf("Before change: %i", n);
     getchar();
     printf("After change: %i\n", n);
 }

@@ -51,3 +51,7 @@ void write(vm_map_read_t task, vm_address_t address, vm_offset_t data) {
     }
     printf("Success!\n");
 }
+
+uint64_t get_sp(arm_unified_thread_state_t state) {
+    return arm_thread_state64_get_sp(state.ts_64);
+}

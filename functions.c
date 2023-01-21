@@ -36,3 +36,14 @@ void write_address() {
     vm_map_read_t task = get_task(pid);
     write(task, address, data);
 }
+
+void get_stack_pointer() {
+    pid_t pid;
+    printf("PID: ");
+    scanf("%d", &pid);
+    vm_map_read_t task = get_task(pid);
+    thread_act_array_t threads = get_threads(task, 1);
+    arm_unified_thread_state_t state = get_state(threads[0]);
+    uint64_t sp = get_sp(state);
+    printf("Stack pointer: 0x%llx\n", sp);
+}

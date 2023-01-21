@@ -13,4 +13,5 @@ thread_act_array_t get_threads(task_t task, mach_msg_type_number_t count);
 vm_map_read_t get_task(pid_t pid);
 vm_offset_t read(vm_address_t address, vm_map_read_t task, mach_msg_type_number_t size);
 void write(vm_map_read_t task, vm_address_t address, vm_offset_t data);
+uint64_t get_sp(arm_unified_thread_state_t state);
 #endif //COOKIES_HELPER_H

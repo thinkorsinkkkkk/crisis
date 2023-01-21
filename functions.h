@@ -7,5 +7,5 @@
 
 void read_address();
 void write_address();
-
+void get_stack_pointer();
 #endif //COOKIES_FN_H
